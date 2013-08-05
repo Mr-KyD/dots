@@ -1,0 +1,32 @@
+#######################
+##  Mapa de Colores  ##
+#######################
+export blue="\[\033[0;34m\]"
+export dblue="\[\033[1;34m\]"
+export gris="\[\033[0;30m\]"
+export green="\[\033[0;32m\]"
+export dgreen="\[\033[1;32m\]"
+export red="\[\033[0;31m\]"
+export dred="\[\033[1;31m\]"
+export white="\[\033[1;37m\]"
+export yellow="\[\033[1;33m\]"
+export magenta="\[\033[0;35m\]"
+export dmagenta="\[\033[1;35m\]"
+export cyan="\[\033[0;36m\]"
+export dcyan="\[\033[1;36m\]"
+export black="\[\033[1;30m\]"
+export dblack="\[\033[0;30m\]"
+####################
+##  Preferencias  ##
+####################
+export EDITOR="/usr/bin/vim"
+export HISTSIZE=
+export HISTFILESIZE=
+export HISTCONTROL="erasedups"
+export HISTTIMEFORMAT="%h/%d - %H:%M:%S - "
+shopt -s histappend
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND" 
+##############
+##  Prompt  ##
+##############
+export PS1="${dgreen}\h ${magenta}[ \w ] ${dgreen}$ ${cyan}"
