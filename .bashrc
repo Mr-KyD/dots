@@ -19,8 +19,14 @@ fi
 
 # Put your fun stuff here.
 
-# Alias
+# Load Colors
+source ~/.bash_colors
+
+# Load Alias
 source ~/.bash_alias
 
-# Pref
-source ~/.bash_pref
+# Load Functions
+source ~/.bash_function
+
+# Load Options
+source ~/.bash_options
