@@ -1,0 +1,26 @@
+##############
+##  Prompt  ##
+##############
+#export PS1="${dgreen}\h ${magenta}[ \w ] ${dgreen}$ ${cyan}"
+#export PS1="${dblue}┌─[\t]──[\u]──[${HOSTNAME%%.*}]:${magenta}\w\n${dblue}└──\[${dgreen}($(/bin/ls -1 | /usr/bin/wc -l | /usr/bin/sed 's: ::g') files, \$(/bin/ls -lah | /usr/bin/grep -m 1 total | /usr/bin/sed 's/total //')b)${dblue}>>\[\e[0m\] "
+
+#export PS1="${magenta}$(acpiconf -i batt | grep "Remaining capacity") ${dred} $(acpiconf -i batt | grep "Remaining time")
+
+export PS1="
+${dblue}┌─[\t]──[\u]──[${HOSTNAME%%.*}]:${magenta}\w\n${dblue}└──\[${dgreen}($(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files, \$(/bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/total //')b)${dblue}>>\[\e[0m\] "
+
+#
+####################
+##  Preferencias  ##
+####################
+export CLICOLOR="yes"
+export EDITOR="/usr/bin/vim"
+export awesome="${HOME}/.config/awesome"
+export HISTSIZE=
+export HISTFILESIZE=
+export HISTCONTROL="erasedups"
+export HISTTIMEFORMAT="%h/%d - %H:%M:%S - "
+export DI_ARGS="-s s -HL" 
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND" 
+shopt -s histappend
+umask 027
