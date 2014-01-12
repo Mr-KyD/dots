@@ -1,0 +1,244 @@
+XTerm*Background: black
+XTerm*Foreground: cyan
+XTerm*geometry: 100x24
+!Xterm*font: DejaVu Sans Mono for Powerline:style=Book
+Xterm*allow-bold-fonts*Label: false
+XTerm*faceName: DejaVu Sans Mono for Powerline
+XTerm*faceSize: 8
+XTerm*metaSendsEscape: true
+
+! Configuracion yeahconsole
+yeahconsole*restart:			0
+yeahconsole*toggleKey:		None+F12
+yeahconsole*background:		black
+yeahconsole*foreground:		white
+yeahconsole*loginShell:		True
+yeahconsole*consoleHeight:	30
+yeahconsole*stepSize:		10
+
+! Configuracion RXVT 
+
+! Titulo ventana ( Default )
+URxvt.title: Consola
+! Barra Scroll
+URxvt.scroll: false
+! Geometria
+URxvt.geometry: 80x24
+! Transparencia
+URxvt.transparent: True
+! Color de fondo
+!URxvt.background: [80]#000000
+! Color Principal ( Letras ) 
+!URxvt.foreground: #699000
+! Color del Cursor
+URxvt.cursorColor: #699000
+! Parpadeo al Cursor
+URxvt.cursorBlink: true
+! Fuente a usar
+URxvt.font: xft:DejaVu Sans Mono for Powerline:style=Book:pixelsize=10
+! Soporte Pestañas
+URxvt.perl-ext-commoni:default,tabbed
+! Color de fondo Pestañas
+URxvt.tabbed.tab-bg:#000000
+! Color Frontal Pestañas
+URxvt.tabbed.tab-fg:#699000
+! Color fondo de los separadores de pestañas
+URxvt.tabbed.tabbar-bg:#000000
+! Color frontal de los separadores de pestañas
+URxvt.tabbed.tabbar-fg:#4E9A06
+! Url Config
+URxvt.perl-ext-common:  default,matcher
+URxvt.url-launcher:      /usr/local/bin/firefox
+URxvt.matcher.button:   1
+! Url Color
+URxvt.colorUL: #4682B4
+! Bells
+URxvt.urgentOnBell: true
+! Configuracion Mouse
+! Cursor ( Mouse )
+Xcursor.theme: Oxygen_Yellow
+Xcursor.size: 22
+
+!
+URxvt*loginShell:  true
+
+!
+URxvt*visualBell:  true
+
+! Colors
+!urxvt*background: #0f0f0f
+!urxvt*foreground: #c8c8c8
+
+!urxvt*background:  #292929
+!urxvt*foreground:  #A2A2A2
+
+
+! BLACK
+!urxvt*color0:      #4E4E4E
+!urxvt*color8:      #777777
+
+! WHITE
+!urxvt*color7:      #CFCFCF
+!urxvt*color15:     #FFFFFF
+
+! RED
+!urxvt*color1:      #A9635D
+!urxvt*color9:      #FFBBB2
+
+! YELLOW
+!urxvt*color3:      #84763D
+!urxvt*color11:     #E0CE91
+
+! GREEN
+!urxvt*color2:      #468459
+!urxvt*color10:     #9DDEAF
+
+! CYAN
+!urxvt*color6:      #008592
+!urxvt*color14:     #79E0ED
+
+! BLUE
+!urxvt*color4:      #5879AF
+!urxvt*color12:     #B3D1FF
+
+! MAGENTA
+!urxvt*color5:      #9C6594
+!urxvt*color13:     #FABDF0
+
+!--------------------------
+! Ivory Light
+!!
+!urxvt*background:  #FEF9EC
+!urxvt*foreground:  #6D727E
+!
+!urxtv*colorBD:     #3E424D
+!urxvt*colorIT:     #3E424D
+!urxvt*colorUL:     #3E424D
+!
+!urxvt*cursorColor: #007693
+!
+!! BLACK
+!urxvt*color0:      #C5C1B4
+!urxvt*color8:      #A1A6B2
+!
+!! WHITE
+!urxvt*color7:      #3E424D
+!urxvt*color15:     #282C36
+!
+!! RED
+!urxvt*color1:      #E75C58
+!urxvt*color9:      #B22B31
+!
+!! YELLOW
+!urxvt*color3:      #A08A00
+!urxvt*color11:     #715F00
+!
+!! GREEN
+!urxvt*color2:      #00A250
+!urxtv*color10:     #007427
+!
+!! CYAN
+!urxvt*color6:      #00A4C1
+!urxvt*color14:     #007693
+!
+!! BLUE
+!urxvt*color4:      #208FFB
+!urxvt*color12:     #0065CA
+!
+!! MAGENTA
+!urxtv*color5:      #D160C4
+!urxvt*color13:     #A03196
+!--------------------------
+
+!Aiko-Fog
+!
+!URxvt.background: #f1eee9
+!URxvt.foreground: black
+!
+!!Black
+!URxvt.color0:     #757475
+!URxvt.color8:     #4a4a4a
+!!Red
+!URxvt.color1:     #936a6f
+!URxvt.color9:     #d76572
+!!Green
+!URxvt.color2:     #668462
+!URxvt.color10:    #4fae42
+!!Yellow
+!URxvt.color3:     #7f7b62
+!URxvt.color11:    #a8981f
+!!Blue
+!URxvt.color4:     #6e7291
+!URxvt.color12:    #7782cf
+!!Magenta
+!URxvt.color5:     #846887
+!URxvt.color13:    #b754c4
+!!Cyan
+!URxvt.color6:     #637e7b
+!URxvt.color14:    #2ea89a
+!!White
+!URxvt.color7:     #9a9a9a
+!URxvt.color15:    #c4c4c4
+!-------------------------
+
+!-------------------------
+! Kyd Style ( Need : gcolor2 ) 
+
+!urxvt*background:  #2D2C28
+urxvt*foreground:  #A4A6AB
+urxvt*background:  #000000
+
+urxvt*colorBD:     #DBDDE2
+urxvt*colorIT:     #DBDDE2
+urxvt*colorUL:     #DBDDE2
+
+urxvt*cursorColor: #53CAD9
+
+! BLACK
+urxvt*color0:      #5B5955
+
+! Bright BLACK
+urxvt*color8:      #707277
+
+! WHITE
+urxvt*color7:      #DBDDE2
+
+! Bright WHITE
+urxvt*color15:     #F7F9FF
+
+! RED
+urxvt*color1:      #82000C
+
+! Bright RED
+urxvt*color9:      #FF000B
+
+! YELLOW
+urxvt*color3:      #9B8A4B
+
+! Bright YELLOW
+urxvt*color11:     #FEFF00
+
+! GREEN
+urxvt*color2:      #559A6A
+
+! Bright GREEN
+urxvt*color10:     #22F700
+
+! CYAN
+urxvt*color6:      #019BAA
+
+! Bright CYAN
+urxvt*color14:     #53CAD9
+
+! BLUE
+urxvt*color4:      #00128A
+
+! Bright BLUE
+urxvt*color12:     #98BBFB
+
+! MAGENTA
+urxvt*color5:      #B577AC
+
+! Bright MAGENTA
+urxvt*color13:     #E5A4DB
+!-------------------------
