@@ -1,0 +1,87 @@
+#!/bin/bash
+
+function extract () #{{{
+{
+
+DIR="/tmp/extract"
+
+		if [ ! -d "${DIR}" ] && [ ! -f ${DIR} ] ; then
+				mkdir -p ${DIR}
+		fi
+
+		if [ -z "$1" ]; then 
+         echo "Por favor ingrese el archivo con su extensión de compresión" 
+         exit 1 
+		else 
+
+# Cambiando al DIR de trabajo
+		cd ${DIR}
+      
+		   case ${1#*.} in 
+				tar)		tar xvf ${1}
+				;;
+				gz)		gzip -d ${1}
+				;;	
+				tar.gz)	tar xvfz ${1}
+				;;
+				tgz)		tar xvfz ${1} 
+				;;
+				bz2)		bzip2 -d ${1}
+				;;
+				tar.bz2)	tar xvfj ${1}
+				;;
+				tbz2)		tar xvfj ${1}
+				;;
+				zip)		unzip ${1}
+				;;
+				rar)		unrar x ${1}
+				;;
+			esac
+     fi 
+
+
+} #}}}
+
+function show () #{{{
+{
+	
+		if [ -z "$1" ]; then 
+         echo "Por favor ingrese el archivo con su extensión de compresión" 
+         exit 1 
+		else 
+			case ${1#*.} in 
+				tar)		tar -tvf ${1}
+				;;
+				gz)		gunzip -l ${1}
+				;;	
+				tar.gz)	tar tvfz ${1}
+				;;
+				tgz)		tar tvfz ${1}
+				;;
+				tar.bz2)	tar tvfj ${1}
+				;;
+				tbz2)		tar tvfj ${1}
+				;;
+				zip)		unzip -l ${1}
+				;;
+				rar)		unrar l "${1}"
+				;;
+			esac
+	fi
+} #}}}
+
+function teste () 
+{
+
+TMP="/tmp/test"
+
+
+if [ ! -d "${TMP}" ] && [ ! -f ${TMP} ] ; then
+	mkdir -p ${TMP}
+	echo "${TMP} creado!"
+else
+	echo "${TMP} ya existe" 
+	echo	
+	ls -l ${TMP}
+fi
+}
